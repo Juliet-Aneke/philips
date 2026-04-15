@@ -1,0 +1,199 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+ul li {
+    list-style-type: none; 
+    display: inline-block;
+}
+
+
+a {
+    text-decoration: none; 
+    
+}
+
+
+header {
+    width: 100%; 
+    height: 4.5rem; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
+    color: black;
+    position: sticky;
+    top: 0; 
+    z-index: 100; 
+}
+
+
+header nav {
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    position: relative; 
+    padding: 0 1rem; 
+}
+
+
+header .desktop-nav-links,
+header nav > a {
+    display: none;
+
+}
+
+
+.logo {
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+
+ ul.mobile-dropdown {
+    position: absolute; 
+    right: 0; 
+    top: 100%;
+    background-color: #f6f6f6; 
+    border-left: 1px solid rgba(0, 0, 0, 0.3); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(0, 0, 0, 0.3); 
+    width: 60%; 
+    max-width: 12rem; 
+    height: calc(100vh - 4.5rem); 
+    padding: 2rem 1rem; 
+    flex-direction: column; 
+    gap: 1.5rem; 
+    display: none; 
+}
+
+.mobile button {
+    font-size: 1.1rem; 
+    outline: 0;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.Hero{
+    width: 100%;
+    height: calc(100vh - 4.5rem);
+    background-image: url(/images/philips-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;  
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+    font-weight: 600;
+}
+
+.Hero p{
+font-size: small;
+width: 50%;
+z-index:3 ;
+color:#f6f6f6;
+}
+
+.Hero h3{
+    color:#f6f6f6;
+    z-index: 3;
+    font-size: 2rem;
+}
+
+.capability{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: black;
+    color: white;
+    padding: 4rem 1rem;
+}
+
+.transformation-capabilities{
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.transformation-capabilities article {
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 3rem;
+    margin: 2rem 1rem;  
+
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(4, auto);
+}
+
+.container img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 760px){
+    .mobile {
+    display: none; 
+    }
+  
+    header .desktop-nav-links {
+    display: flex; 
+    gap: 2rem; 
+    }
+
+   
+    header .desktop-nav-links a
+    {
+    color: black; 
+    font-weight: 300; 
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in;
+    }
+
+
+    .desktop-nav-links a:hover
+    {
+    background-color:#f6f6f6;
+    padding: 1rem;
+    }
+ 
+    .transformation-capabilities{
+    display: flex;
+    flex-direction: row;
+    }
+
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    }
+}
+
+
+
+@media (min-width: 1000px) {
+
+
+
+     }
+
