@@ -25,7 +25,7 @@ header {
     color: black;
     position: sticky;
     top: 0; 
-    z-index: 100; 
+    z-index: 50; 
 }
 
 
@@ -78,31 +78,39 @@ header nav > a {
     cursor: pointer;
 }
 
-.Hero{
+.hero {
     width: 100%;
-    height: calc(100vh - 4.5rem);
-    background-image: url(/images/philips-image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+    min-height: calc(100vh - 4.5rem); 
+    background-image: url("../images/philips-image.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    position: relative; 
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;  
-    gap: 1.5rem;
-    padding: 1rem 2rem;
-    font-weight: 600;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 1.5rem; 
 }
 
-.Hero p{
+/* Dark overlay on hero background */
+.overlay {
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(1, 10, 70, 0.5); 
+}
+
+.hero p{
 font-size: small;
 width: 50%;
 z-index:3 ;
 color:#f6f6f6;
 }
 
-.Hero h3{
+.hero h3{
     color:#f6f6f6;
     z-index: 3;
     font-size: 2rem;
