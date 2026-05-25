@@ -23,7 +23,7 @@ header {
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     background-color: rgba(0, 0, 0, 0.1);
     color: black;
-    position: sticky;
+    position: static;
     top: 0; 
     z-index: 50; 
 }
@@ -81,16 +81,18 @@ header nav > a {
 .hero {
     width: 100%;
     min-height: calc(100vh - 4.5rem); 
-    background-image: url("../images/philips-image.jpg");
+    background-image: url(../images/img.jpg);
     background-repeat: no-repeat; 
     background-size: cover; 
     background-position: center; 
     position: relative; 
     display: flex;
     flex-direction: column; 
-    align-items: center; 
+    align-items: flex-start;
     justify-content: center; 
     gap: 1.5rem; 
+    padding: 0 3rem;
+    padding-top: 15rem;
 }
 
 /* Dark overlay on hero background */
@@ -104,18 +106,40 @@ header nav > a {
 }
 
 .hero p{
-font-size: small;
-width: 50%;
-z-index:3 ;
+max-width: 1500px;
+width: 65%;
+font-weight: 600;
 color:#f6f6f6;
+line-height: 1.7;
 }
 
-.hero h3{
+.hero h1{
     color:#f6f6f6;
-    z-index: 3;
     font-size: 2rem;
 }
 
+.sub-hero{
+    background-color:#2a2c2b;
+    min-height: 50vh;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 4rem 8rem;
+    
+}
+
+.sub-hero button{
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color:#2a2c2b;
+    border: 1px solid aqua;
+    color: white;
+    font-size: medium;
+}
+
+.sub-hero h2{
+    color: white;
+}
 .capability{
     display: flex;
     flex-direction: column;
@@ -175,7 +199,7 @@ color:#f6f6f6;
     header .desktop-nav-links a
     {
     color: black; 
-    font-weight: 300; 
+    font-weight: 600; 
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in;
     }
 
