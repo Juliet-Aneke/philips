@@ -434,7 +434,7 @@ line-height: 1.7;
     flex-direction: column;
     gap: 2rem;
     color: white;
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-weight: 600;
     line-height:2;
     font-size: medium;
@@ -493,9 +493,77 @@ line-height: 1.7;
 }
 
 .sub-hero-2 h2{
-    margin-top: 5rem;
+    margin-top: 3rem;
     color: white;
     
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    gap: 3rem;
+    background-color: black;
+    color: white;
+    padding: 10rem 2rem;
+    height: 70%;
+
+    }
+
+
+.grid a{
+    background-color:#2a2c2b;
+    border: 1px solid aqua;
+    color: white;
+    font-weight:800;
+    padding:1rem;
+    transition: all 0.3s ease-in-out; 
+    border-radius: 0.5rem;
+    width: 30%;
+}
+
+
+.grid-text a:hover{
+    color:peru;
+}
+
+
+.grid-text{
+    display: flex;
+    flex-direction:column ;
+    gap: 2rem;
+}
+
+.grid-text p{
+    line-height: 2;
+    color: #484137;
+    font-weight: 600;
+}
+.grid img{
+    width: 100%;
+    object-fit: contain;  
+}
+
+.lists{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    padding:0 3rem;
+}
+
+.list-1{
+    border: 1px solid white;
+}
+.list-2{
+    border: 1px solid white;
+    padding: 1rem;
+}
+
+.list-2 li{
+    color: white;
+}
+.list-3 {
+    border: 1px solid white;
 }
 
 @media (min-width: 768px){
@@ -509,28 +577,33 @@ line-height: 1.7;
     }
 
    
-    header .desktop-nav-links a
-        {
-        color: black; 
-        font-weight: 600; 
-        transition: background-color 0.3s ease-in-out, color 0.3s ease-in;
-        }
-
-
-    .desktop-nav-links a:hover
+header .desktop-nav-links a
     {
+    color: black; 
+    font-weight: 600; 
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in;
+    }
+
+
+.desktop-nav-links a:hover {
     background-color:#f6f6f6;
     padding: 1rem;
     }
  
-    .transformation-capabilities{
+.transformation-capabilities{
     display: flex;
-    flex-direction: row;
-    }
+    flex-direction: row;}
 
   .container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
+    }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    align-items: center;
     }
 
     .sub-content-2{
@@ -540,6 +613,24 @@ line-height: 1.7;
     padding: 4rem 8rem;
     gap: 4rem;
 }
+
+.grid img {
+    
+    width: 100%;;
+    object-fit: contain;
+}
+
+.lists{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 3rem;
+    background-color: black;
+    color: white;
+}
+
+
+
 
 }
 
